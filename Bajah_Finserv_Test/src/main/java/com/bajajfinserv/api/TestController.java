@@ -16,7 +16,7 @@ public class TestController {
 	@Autowired
 	DataService ds;
 
-	@PostMapping("/bfhl")
+	@PostMapping("bfhl")
 	public ResponseEntity<User> testAPI(@Validated @RequestBody Data inputData) {
 		Data d = inputData;
 		User user = ds.resposeData(d);
